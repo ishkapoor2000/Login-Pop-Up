@@ -1,6 +1,8 @@
 const loginPopup = document.querySelector(".login-popup");
 const close = document.querySelector(".close");
 
+const subBtn = document.querySelector(".btn");
+
 window.addEventListener("load", function () {
 	showPopup();
 })
@@ -19,5 +21,9 @@ function showPopup() {
 }
 
 close.addEventListener("click", function(){
+	loginPopup.classList.remove("show");
+});
+
+subBtn.addEventListener("click", function(){
 	loginPopup.classList.remove("show");
 });
